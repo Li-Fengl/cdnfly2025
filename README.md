@@ -40,6 +40,7 @@
 2025.1.19 修复流量监控出现错误<br />
 2025.1.19 修复不自动清理数据<br />
 2025.1.19 优化备份策略自测<br />
+
 ## 简易安装教程
 主控版本：5.2.2<br />
 被控版本：5.1.19<br />
@@ -51,6 +52,7 @@ CentOS7更换镜像源<br />
 
 ```bash
 bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/ChangeMirrors.sh)
+bash <(curl -L https://linuxmirrors.cn/main.sh)
 ```
 
 <p>手动换源：<br />
