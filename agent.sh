@@ -166,6 +166,7 @@ sync_time(){
         yum -y install ntpdate wget
         /usr/sbin/ntpdate -u pool.ntp.org || true
         ! grep -q "/usr/sbin/ntpdate -u pool.ntp.org" /var/spool/cron/root > /dev/null 2>&1 && echo '0 0 * * * /usr/sbin/ntpdate -u pool.ntp.org > /dev/null 2>&1' >> /var/spool/cron/root
+        ! grep -q "@reboot /root/IpsshdWhitelist_.sh" /var/spool/cron/root > /dev/null 2>&1 && echo '@reboot /root/IpsshdWhitelist_.sh >> /var/log/ipssh_whitelist.log 2>&1' >> /var/spool/cron/root
         service crond restart
     fi
 
