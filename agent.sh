@@ -12,7 +12,7 @@ fi
 
 
 
-read -p "按Enter键继续运行脚本..."
+#read -p "按Enter键继续运行脚本..."
 set -o errexit
 
 
